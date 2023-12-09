@@ -133,6 +133,7 @@ C:\scaffold-eth-2>yarn start
 
 Vote for proposals (index numbers 0, 1 or 2), 
 put in number of votes,
+
 ![image](https://github.com/BigBangInfinity/ballot_shared-main/assets/37957341/9bd89b6f-9a9a-4504-a1bf-91259cc4f708)
 
 
