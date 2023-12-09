@@ -1,3 +1,11 @@
+Clone three repos to these folders:
+
+```
+C:\backend\my-api> git clone https://github.com/BigBangInfinity/ballot_shared-backend-my-api
+C:\ballotcontract> git clone https://github.com/BigBangInfinity/ballot_shared-ballotcontract
+C:\scaffold-eth-2> git clone https://github.com/BigBangInfinity/ballot_shared-scaffold-eth-2
+```
+
 C:\ballotcontract>npx hardhat compile 
 C:\ballotcontract>npx ts-node .\scripts\deployMyToken.ts
 
