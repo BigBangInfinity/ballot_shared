@@ -55,7 +55,14 @@ Launches Scaffold ETH on
 http://localhost:3000
 
 Request tokens on the frontend
+
+![image](https://github.com/BigBangInfinity/ballot_shared-main/assets/37957341/0c13ecb0-b85f-4be3-afde-6900b68b51e6)
+
+
 delegate vote to yourself or to someone else.
+
+![image](https://github.com/BigBangInfinity/ballot_shared-main/assets/37957341/c6705a8d-a8b5-491a-97b1-1aa6e731db5d)
+
 
 After delegation, deploy ballot. Votes have to be delegated before deploying the ballot, otherwise they don't count.
 
@@ -79,15 +86,15 @@ To get the bytes representation, run
 C:\ballot_shared-ballotcontract>npx ts-node .\scripts\encodeStrings.ts 
 ```
 The strings ["Proposal1", "Proposal2", "Proposal3"] are converted to 
-
+```
 [
   '0x50726f706f73616c310000000000000000000000000000000000000000000000',
   '0x50726f706f73616c320000000000000000000000000000000000000000000000',
   '0x50726f706f73616c330000000000000000000000000000000000000000000000'
 ]
-
+```
 Create arguments.json file which contains the constructir arguments which are needed for Etherscan verification:
-
+```
 [
     [
         "0x50726f706f73616c310000000000000000000000000000000000000000000000",
@@ -97,6 +104,9 @@ Create arguments.json file which contains the constructir arguments which are ne
     "0xAF1bd0f58949f47f0bE98732DC3a8a79FfFB2f0e",
     "4853193"
 ]
+```
+
+verify on etherscan:
 
 ```
 C:\ballot_shared-ballotcontract>npx hardhat verify --network sepolia --constructor-args arguments.json 0xB76315720DbE71718ad670A5E938C86a26555A7c 
@@ -121,4 +131,11 @@ Relaunch scaffold-eth-2
 C:\scaffold-eth-2>yarn start
 ```
 
-Vote for proposals (0, 1, 2), put in number of votes, and then read results.
+Vote for proposals (index numbers 0, 1 or 2), 
+put in number of votes,
+![image](https://github.com/BigBangInfinity/ballot_shared-main/assets/37957341/9bd89b6f-9a9a-4504-a1bf-91259cc4f708)
+
+
+and then read results.
+
+![image](https://github.com/BigBangInfinity/ballot_shared-main/assets/37957341/412cfd01-7eda-4f56-a162-add8e90f81ae)
