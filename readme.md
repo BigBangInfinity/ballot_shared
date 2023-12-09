@@ -6,6 +6,14 @@ C:\> git clone https://github.com/BigBangInfinity/ballot_shared-ballotcontract
 C:\> git clone https://github.com/BigBangInfinity/ballot_shared-scaffold-eth-2
 ```
 
+yarn install in these folders
+
+```
+C:\ballot_shared-backend-my-api> yarn install
+C:\ballot_shared-ballotcontract> yarn install
+C:\ballot_shared-scaffold-eth-2> yarn install
+```
+
 C:\ballotcontract>npx hardhat compile 
 C:\ballotcontract>npx ts-node .\scripts\deployMyToken.ts
 
